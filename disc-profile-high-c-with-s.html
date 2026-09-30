@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DISC Profile — High C with S | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;--red:#B5543C;--green:#4E8C6A;--slate:#6B7C8C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;font-weight:400;font-size:16.5px;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.6rem;line-height:1.08;margin:0 0 .4rem}
+h2{font-size:1.8rem;line-height:1.2;margin:0 0 .85rem}
+h3{font-size:1.16rem;margin:0 0 .4rem}
+p{margin:0 0 1.05rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1.05rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+.mast{background:var(--charcoal);color:#F5F3EE;padding:30px 0 34px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto}
+.kicker{color:var(--gold);font-size:.9rem;margin:24px 0 4px}
+.mast h1{color:#FBFAF7}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1.04rem;max-width:64ch}
+.blend{background:var(--teal);color:#fff;padding:28px 0}
+.blend h2{color:#fff;font-size:1.45rem;margin-bottom:.4rem}
+.blend p{color:#DDEFEC}
+.blend b{color:#fff}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.28);border-radius:10px;overflow:hidden;margin-top:18px}
+.mix div{background:var(--teal);padding:20px}
+.mix div:first-child{background:var(--teal-deep)}
+.mix .k{font-size:.78rem;color:#CDE8E5;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+.mix .v{font-family:'Cormorant Garamond',serif;font-size:1.5rem;line-height:1.25;color:#fff}
+.mix .n{font-size:.88rem;color:#CDE8E5;margin-top:6px;line-height:1.45}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:19px 22px}
+.card.good{border-left:4px solid var(--green)}
+.card.bad{border-left:4px solid var(--red)}
+.card h3{margin-top:0}
+.card ul{margin-bottom:0;padding-left:1.1rem}
+.card li{font-size:.96rem}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin:0 0 18px}
+.box h3{margin-top:0}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;border-radius:0 8px 8px 0;margin:0 0 20px}
+.pull p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;line-height:1.5;margin-bottom:0}
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 12px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 16px}
+.dbody>*:last-child{margin-bottom:0}
+.tscroll{overflow-x:auto;margin:0 0 16px}
+table{border-collapse:collapse;width:100%;font-size:.94rem;background:#fff;min-width:520px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;padding:11px 13px;border-bottom:2px solid var(--line)}
+td{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th.a{color:var(--green)}th.b{color:var(--red)}
+.script{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:0 0 14px;font-size:.97rem}
+.script .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:6px}
+.script.no .lbl{color:var(--red)}
+.script.yes .lbl{color:var(--green)}
+.script p{margin:0;font-style:italic;color:#333}
+footer{background:var(--charcoal);color:#B8B2A8;padding:30px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+@media(max-width:720px){h1{font-size:2rem}h2{font-size:1.45rem}.two,.mix{grid-template-columns:1fr}.mast .tag{margin-left:0;width:100%}}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Internal · Communication Guide</span>
+    </div>
+    <p class="kicker">DISC Profile</p>
+    <h1>High C with a Steadiness blend</h1>
+    <p class="sub">How to communicate with an owner or resident who leads with Conscientiousness and carries a secondary S. One of the most common profiles we work with — and one of the easiest to lose if handled wrong.</p>
+  </div>
+</header>
+
+<div class="blend">
+  <div class="wrap">
+    <h2>What the blend means</h2>
+    <p>Two traits are working together here, and they pull in the same direction: <b>slow down, be accurate, and do not surprise me.</b></p>
+    <div class="mix">
+      <div>
+        <div class="k">C — Conscientiousness (primary)</div>
+        <div class="v">Accuracy, evidence, process</div>
+        <div class="n">Wants to be right. Reads everything. Trusts data over enthusiasm.</div>
+      </div>
+      <div>
+        <div class="k">S — Steadiness (secondary)</div>
+        <div class="v">Stability, loyalty, harmony</div>
+        <div class="n">Dislikes sudden change and conflict. Slow to commit, then very loyal.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section style="border-top:none">
+  <h2>How to recognize them</h2>
+  <p>You will usually know within two exchanges.</p>
+  <ul>
+    <li><b>They ask detailed questions</b> — often several in one email, sometimes numbered.</li>
+    <li><b>They reply in writing rather than calling</b>, and their emails are organized and specific.</li>
+    <li><b>They take time to respond.</b> A decision that another owner makes in an hour takes them two days, because they are reading the material.</li>
+    <li><b>They notice inconsistencies.</b> If a figure in one report does not match the last one, they will mention it.</li>
+    <li><b>They are polite and low-conflict</b> — the S showing. They rarely argue. They go quiet instead.</li>
+    <li><b>They ask about process</b> — how something works, who does it, what happens next — more than about outcomes.</li>
+  </ul>
+
+  <div class="pull">
+    <p>The mistake most people make is reading their silence as agreement. With this profile, silence usually means they are still thinking — or that something concerned them and they did not want to say so.</p>
+  </div>
+</section>
+
+<section>
+  <h2>What they need <em>from us</em></h2>
+  <div class="two">
+    <div class="card good">
+      <h3>Builds trust</h3>
+      <ul>
+        <li>Written detail they can read at their own pace</li>
+        <li>Data and comparables, not opinions</li>
+        <li>Advance notice of anything changing</li>
+        <li>Consistency between what we said last time and this time</li>
+        <li>Doing exactly what we said we would do, on the day we said</li>
+        <li>Admitting an error plainly and showing the fix</li>
+        <li>The same person handling them over time</li>
+      </ul>
+    </div>
+    <div class="card bad">
+      <h3>Breaks trust</h3>
+      <ul>
+        <li>Being rushed or pressured to decide</li>
+        <li>Vague answers — "it should be fine," "around a week"</li>
+        <li>Surprises, even good ones</li>
+        <li>Enthusiasm in place of evidence</li>
+        <li>Numbers that do not reconcile with an earlier report</li>
+        <li>Over-familiarity too early</li>
+        <li>Small promises not kept — they keep score quietly</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>The one that costs us most</h3>
+    <p><b>A missed small commitment.</b> A High C tracks details, and the S makes them reluctant to complain about it. So they do not tell us we were three days late with something — they simply lower their confidence a notch and say nothing.</p>
+    <p>By the time this profile raises a concern out loud, it is usually the fourth or fifth thing, not the first.</p>
+  </div>
+</section>
+
+<section>
+  <h2>How to write to them</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Do</th><th>Don't</th></tr></thead>
+    <tbody>
+      <tr><td>Lead with the recommendation, then show the evidence</td><td>Bury the recommendation at the end</td></tr>
+      <tr><td>Use specific numbers and dates</td><td>Use "shortly," "soon," "a few"</td></tr>
+      <tr><td>Give them the full analysis to read</td><td>Summarize and hold back the detail</td></tr>
+      <tr><td>Offer a clear next step with a date</td><td>Ask them to decide on the call</td></tr>
+      <tr><td>Say what you do not know</td><td>Fill gaps with reassurance</td></tr>
+      <tr><td>Keep the same format each time</td><td>Change the reporting style without warning</td></tr>
+      <tr><td>Follow up in writing after a call</td><td>Rely on a verbal agreement</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="script no">
+    <div class="lbl">Instead of this</div>
+    <p>"Hi! Great news — I think we should drop the price to $2,395 and I'm confident we'll get it leased fast. Let me know!"</p>
+  </div>
+  <div class="script yes">
+    <div class="lbl">Write this</div>
+    <p>"Our recommendation is $2,395. The full analysis is linked below and includes the six comparable leases it is based on. The closest one — same community, same size — leased at $2,400 after 68 days. If you would like to proceed, I will update the listing Thursday. If you would prefer to discuss it first, I am glad to."</p>
+  </div>
+
+  <p>The second version does three things the first does not. It gives the number up front, it shows the evidence, and it offers a decision without demanding one today.</p>
+</section>
+
+<section>
+  <h2>In our specific situations</h2>
+
+  <details>
+    <summary>Pricing recommendations and reductions</summary>
+    <div class="dbody">
+      <p>This is where the profile is easiest to work with, because our analyses are built the way they think. Send the full report. They will read all of it, including the expandable sections.</p>
+      <p><b>Give them a deadline that is soft but real:</b> "If I do not hear back by Thursday, I will leave the price as is and we will revisit next week." That removes pressure while preventing a decision from drifting for two weeks.</p>
+      <p><b>Do not oversell the recommendation.</b> One confident sentence and then the evidence. If you push, they will slow down, not speed up.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Maintenance approvals</summary>
+    <div class="dbody">
+      <p>Send the scope, the quote and the reason in writing before asking for approval. If there are options, lay out two or three with costs rather than making the choice for them.</p>
+      <p><b>Anticipate the question they will ask</b> — why this vendor, why this price, what happens if we wait. Answering it before they ask saves a round trip and builds real credibility.</p>
+      <p>For anything urgent, say plainly that it is urgent and why, and give them a specific window to respond. They will move quickly when the reasoning is clear; they will stall when it is not.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Renewals and rent increases</summary>
+    <div class="dbody">
+      <p>Give more notice than you would to any other profile. The S dislikes abrupt change, and a renewal conversation sprung with three weeks' notice will feel rushed even if the recommendation is sound.</p>
+      <p>Show the comparables. An increase they can see justified is accepted readily; an increase presented as a judgment call is questioned.</p>
+      <p>If the recommendation is to hold rent flat or accept less, explain the vacancy arithmetic. This profile responds very well to a break-even calculation and poorly to "trust me on this."</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>When something goes wrong</summary>
+    <div class="dbody">
+      <p>Tell them early, plainly, and with the fix attached. This profile forgives an error that is disclosed and corrected. What they do not forgive is finding out later, or a vague account of what happened.</p>
+      <p>Avoid over-apologizing. A long apology reads as instability to a C, and instability is the thing they are watching for. State what happened, what you have done, and what changes.</p>
+      <p><b>Follow up in writing once it is resolved.</b> Closing the loop matters more to this profile than the speed of the fix.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Onboarding a new C/S owner</summary>
+    <div class="dbody">
+      <p>Front-load the documentation. The Owner Journey, the Show-Ready Standard, the fee schedule — send all of it and let them read before the conversation. They will arrive prepared and the call will be far more productive.</p>
+      <p>Set the reporting cadence explicitly and then never miss it. Predictability is the thing that converts this profile from cautious to loyal.</p>
+      <p>Expect a longer decision timeline than a D or an I owner. That is not hesitation about us — it is how they decide everything.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2>Under stress</h2>
+  <p>Worth knowing, because it does not look like conflict.</p>
+  <ul>
+    <li><b>They withdraw rather than confront.</b> Emails get shorter and more formal. Calls get declined.</li>
+    <li><b>They over-analyze.</b> Requests for more data than the decision requires are usually a sign of discomfort, not genuine information need.</li>
+    <li><b>They agree and then do not act.</b> A "yes" followed by silence often means they were avoiding disagreement in the moment.</li>
+    <li><b>They start documenting.</b> Emails that recap previous conversations in detail are a warning sign that confidence has dropped.</li>
+  </ul>
+
+  <div class="box">
+    <h3>What to do about it</h3>
+    <p>Do not press harder. Slow down, put things in writing, and give them room. Ask a direct, low-pressure question: <i>"Is there anything about this you'd like me to explain further before we move ahead?"</i></p>
+    <p>That question works because it gives a conflict-averse person permission to raise a concern without having to start an argument.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The short version</h2>
+  <ul>
+    <li><b>Give evidence, not enthusiasm.</b> They trust numbers and comparables.</li>
+    <li><b>Never rush them.</b> Offer a soft deadline rather than pressure.</li>
+    <li><b>Be consistent.</b> Same format, same cadence, same person.</li>
+    <li><b>Keep every small promise.</b> They are keeping score and will not tell you.</li>
+    <li><b>Do not mistake silence for agreement.</b> Ask directly.</li>
+    <li><b>Disclose problems early</b>, with the fix attached and without a long apology.</li>
+  </ul>
+
+  <div class="pull">
+    <p>This profile is slow to commit and then stays for years. The work is all in the first ninety days — after that, consistency alone keeps them.</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b> · Internal document — not for distribution outside the company</p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">DISC is a behavioral communication framework, not a personality test or a clinical assessment. This guide describes observed communication preferences and is intended to help us adapt how we present information — not to categorize or label anyone.</p>
+  </div>
+</footer>
+
+</body>
+</html>
